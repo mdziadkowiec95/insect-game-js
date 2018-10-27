@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.score {
+  font-size: 20px;
+  text-align: center;
+}
+
+.insect {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+}
+
+.insect.caught {
+  background-color: red;
+  animation: caughtInsect 0.2s ease-in forwards;
+}
+
+.insect:hover {
+  opacity: 0.6;
+}
+
+@keyframes caughtInsect {
+  from { width: 30px; height: 30px; }
+  to { width: 0; height: 0; }
+}
