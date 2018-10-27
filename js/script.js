@@ -40,8 +40,8 @@ function changePosition(width, height) {
   let randomX = Math.floor(Math.random() * width);
   let randomY = Math.floor(Math.random() * height);
 
-  newInsect.style.setProperty('top', randomY + 'px');
-  newInsect.style.setProperty('left', randomX + 'px');
+  newInsect.style.setProperty('top', (randomY - 30) + 'px');
+  newInsect.style.setProperty('left', (randomX - 30) + 'px');
   newInsect.classList.remove('caught');
 
 }
